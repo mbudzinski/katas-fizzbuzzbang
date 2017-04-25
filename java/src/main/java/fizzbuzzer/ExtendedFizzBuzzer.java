@@ -18,7 +18,6 @@ public class ExtendedFizzBuzzer {
 
     private List<ConditionalBehavior> behaviors;
 
-
     public ExtendedFizzBuzzer(BangAppender bangAppender, int bangThreshold, List<ConditionalBehavior> behaviors) {
         this.bangAppender = bangAppender;
         this.bangThreshold = bangThreshold;
