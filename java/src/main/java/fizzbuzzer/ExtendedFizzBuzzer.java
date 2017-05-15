@@ -61,8 +61,6 @@ public class ExtendedFizzBuzzer extends AbstractFizzBuzzer {
         return operator.apply(number);
     }
 
-
-
     private String appendBangToAnswerIfNecessary(String baseAnswer) {
         if (studentIndex % bangThreshold == 0) {
             studentIndex = 0;
