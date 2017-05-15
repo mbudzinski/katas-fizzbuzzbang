@@ -47,7 +47,6 @@ public class ExtendedFizzBuzzer {
     private String fizzBuzzBang(int number, Function<Integer, String>... buzzers) {
 
         StringBuilder resultBuilder = new StringBuilder();
-
         Arrays.asList(buzzers).forEach(buzzer -> resultBuilder.append(buzzer.apply(number)));
 
         return resultBuilder.toString();
