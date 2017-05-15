@@ -51,7 +51,6 @@ public class ExtendedFizzBuzzer {
         Arrays.asList(buzzers).forEach(buzzer -> resultBuilder.append(buzzer.apply(number)));
 
         return resultBuilder.toString();
-
     }
 
     private String appendBangToAnswerIfNecessary(String baseAnswer) {
