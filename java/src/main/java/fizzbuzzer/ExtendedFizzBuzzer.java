@@ -18,7 +18,7 @@ public class ExtendedFizzBuzzer {
 
     private List<ConditionalBehavior> behaviors;
 
-    public ExtendedFizzBuzzer(BangAppender bangAppender, int bangThreshold, List<ConditionalBehavior> behaviors) {
+    public ExtendedFizzBuzzer(BangAppender bangAppender, int bangThreshold, List<ConditionalBehavior> behaviors){
         this.bangAppender = bangAppender;
         this.bangThreshold = bangThreshold;
         this.behaviors = behaviors;
@@ -51,6 +51,7 @@ public class ExtendedFizzBuzzer {
 
         return resultBuilder.toString();
     }
+
 
     private String appendBangToAnswerIfNecessary(String baseAnswer) {
         if (studentIndex % bangThreshold == 0) {
