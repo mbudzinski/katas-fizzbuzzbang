@@ -52,7 +52,6 @@ public class ExtendedFizzBuzzer {
         return resultBuilder.toString();
     }
 
-
     private String appendBangToAnswerIfNecessary(String baseAnswer) {
         if (studentIndex % bangThreshold == 0) {
             studentIndex = 0;
