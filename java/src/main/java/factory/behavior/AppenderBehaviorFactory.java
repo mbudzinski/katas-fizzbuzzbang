@@ -3,6 +3,10 @@ package factory.behavior;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
+<<<<<<< 0e747d9f2d58483190497f3844906d9f789af910
+=======
+import java.util.function.UnaryOperator;
+>>>>>>> Implemented a fizzBuzzBang method
 
 
 public class AppenderBehaviorFactory implements AbstractConditionalBehaviorFactory {
