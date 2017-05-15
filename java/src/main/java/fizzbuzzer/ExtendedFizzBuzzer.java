@@ -37,8 +37,6 @@ public class ExtendedFizzBuzzer extends AbstractFizzBuzzer {
         boolean isNumberDivisibleByThree = number % 3 == 0;
         boolean isNumberDivisibleByFive = number % 5 == 0;
 
-        String answer = "";
-
         if (isNumberDivisibleByThree && isNumberDivisibleByFive) {
             return FIZZ + BUZZ + POW + MRRU;
         }
