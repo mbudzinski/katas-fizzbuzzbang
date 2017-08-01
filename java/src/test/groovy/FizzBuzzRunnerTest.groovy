@@ -14,7 +14,7 @@ class FizzBuzzRunnerTest extends Specification {
         when:
             fizzBuzzRunner.run(upperBound)
         then:
-            upperBound * fizzBuzzRunner.printAnswer(evaluatedAnswer)
+            upperBound * answerSupplier.getAnswerFor(_ as Integer)
     }
 
 }

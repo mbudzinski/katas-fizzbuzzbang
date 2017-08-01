@@ -24,14 +24,14 @@ public class AnswerSupplier {
 
     private Function<Integer, String> powMatcher = (number) -> {
         if (number % 3 == 0 || number.toString().contains("3")) {
-            return "Mrru";
+            return "Pow";
         }
         return "";
     };
 
     private Function<Integer, String> mrruMatcher = (number) -> {
         if (number % 5 == 0 || number.toString().contains("5")) {
-            return "Pow";
+            return "Mrru";
         }
         return "";
     };

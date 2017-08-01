@@ -1,19 +1,18 @@
+import java.util.Optional;
 
 public class BangAppender {
 
     public int interval;
 
-    String bang = "Bang";
+    final String BANG = "Bang";
 
     public BangAppender(int interval) {
         this.interval = interval;
     }
 
     public String appendBangIfNecessary(int studentIndex, String answer) {
-        if (studentIndex % interval == 0) {
-            answer += bang;
-        }
-        return answer;
+        return Optional.ofNullable(answer).filter(ans -> studentIndex % interval == 0)
+                .map(ans -> ans += BANG).orElse(answer);
     }
 
 

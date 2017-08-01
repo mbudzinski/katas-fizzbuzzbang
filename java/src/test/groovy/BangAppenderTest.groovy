@@ -13,7 +13,7 @@ class BangAppenderTest extends Specification {
         when:
             def returnedString = bangAppender.appendBangIfNecessary(studentIndexWhichEqualsToInterval, originalString)
         then:
-            returnedString == originalString + bangAppender.bang
+            returnedString == originalString + bangAppender.BANG
     }
 
     def 'Does not append bang to the string if student index does not equal to the given interval'() {
@@ -23,7 +23,7 @@ class BangAppenderTest extends Specification {
         when:
             def returnedString = bangAppender.appendBangIfNecessary(studentIndexWhichDoesNotEqualToInterval, originalString)
         then:
-            !returnedString.contains(bangAppender.bang)
+            !returnedString.contains(bangAppender.BANG)
     }
 
 }

@@ -1,28 +1,14 @@
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Function;
+import java.util.stream.IntStream;
 
 public class FizzBuzzRunner {
 
     private AnswerSupplier answerSupplier;
-
-
 
     public FizzBuzzRunner(AnswerSupplier answerSupplier) {
         this.answerSupplier = answerSupplier;
     }
 
     public void run(int upperBound) {
-        for (int studentIndex = 1; studentIndex <= upperBound; studentIndex++) {
-            String answer = answerSupplier.getAnswerFor(studentIndex);
-            printAnswer(answer);
-        }
+        IntStream.range(1, upperBound + 1).mapToObj(index -> answerSupplier.getAnswerFor(index)).forEach(System.out::println);
     }
-
-    protected void printAnswer(String answer) {
-        System.out.println(answer);
-    }
-
-
-
 }
