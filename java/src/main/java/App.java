@@ -1,13 +1,10 @@
 public class App {
 
+    private static final int BANG_INTERVAL = 15;
 
     public static void main(String[] args) {
-        FizzBuzzEvaluator fizzBuzzEvaluator = new FizzBuzzEvaluator();
-        BangAppender bangAppender = new BangAppender(15);
-        AnswerSupplier answerSupplier = new AnswerSupplier(fizzBuzzEvaluator, bangAppender);
-        FizzBuzzRunner fizzBuzzRunner = new FizzBuzzRunner(answerSupplier);
-
+        FizzBuzzRunnerFactory factory = new FizzBuzzRunnerFactory();
+        FizzBuzzRunner fizzBuzzRunner = factory.create(BANG_INTERVAL);
         fizzBuzzRunner.run(100);
     }
-
 }

@@ -1,7 +1,7 @@
 import spock.lang.Specification
 
 
-class AnswerSupplierTest extends Specification {
+class AnswerSupplierSpec extends Specification {
 
     FizzBuzzEvaluator fizzBuzzEvaluator = Mock(FizzBuzzEvaluator)
     BangAppender bangAppender = Mock(BangAppender)

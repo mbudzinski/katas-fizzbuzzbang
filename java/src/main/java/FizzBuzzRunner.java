@@ -9,6 +9,7 @@ public class FizzBuzzRunner {
     }
 
     public void run(int upperBound) {
-        IntStream.range(1, upperBound + 1).mapToObj(index -> answerSupplier.getAnswerFor(index)).forEach(System.out::println);
+        IntStream.range(1, upperBound + 1).mapToObj(index -> answerSupplier.getAnswerFor(index))
+                                          .forEach(System.out::println);
     }
 }

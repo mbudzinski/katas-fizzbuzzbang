@@ -3,7 +3,7 @@ import java.util.function.Function
 import spock.lang.Specification
 
 
-class FizzBuzzEvaluatorTest extends Specification {
+class FizzBuzzEvaluatorSpec extends Specification {
 
     FizzBuzzEvaluator fizzBuzzEvaluator = new FizzBuzzEvaluator()
 

@@ -1,7 +1,7 @@
 import spock.lang.Specification
 
 
-class BangAppenderTest extends Specification {
+class BangAppenderSpec extends Specification {
 
     int interval = 10
     BangAppender bangAppender = new BangAppender(interval)
